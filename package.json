@@ -1,0 +1,27 @@
+{
+  "name": "kawai-scapes",
+  "version": "1.0.0",
+  "description": "Trying out Svelte + Threejs to learn both :O",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "three": "^0.124.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaushal1011/Kawai-Scapes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaushal1011/Kawai-Scapes/issues"
+  },
+  "homepage": "https://github.com/Kaushal1011/Kawai-Scapes#readme"
+}
