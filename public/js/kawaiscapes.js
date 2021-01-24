@@ -1,8 +1,7 @@
-import * as THREE from "/build/three.module.js";
-import { FlyControls } from "/jsm/controls/FlyControls.js";
-import { OrbitControls } from "/jsm/controls/OrbitControls.js";
-import Stats from "/jsm/libs/stats.module.js";
-import { GLTFLoader } from "/jsm/loaders/GLTFLoader.js";
+import * as THREE from '/build/three.module.js';
+import { OrbitControls } from '/jsm/controls/OrbitControls.js';
+import Stats from '/jsm/libs/stats.module.js';
+import { GLTFLoader } from '/jsm/loaders/GLTFLoader.js';
 
 const scene = new THREE.Scene();
 
@@ -17,7 +16,7 @@ const light = new THREE.HemisphereLight(0xffffbb, 0x080820, 2);
 scene.add(light);
 
 const loader2 = new THREE.TextureLoader();
-const texture = loader2.load("./assets/kloppenheim_03.jpg", () => {
+const texture = loader2.load('./assets/kloppenheim_03.jpg', () => {
     const rt = new THREE.WebGLCubeRenderTarget(texture.image.height);
     rt.fromEquirectangularTexture(renderer, texture);
     scene.background = rt;
@@ -55,11 +54,11 @@ controls.keys = {
 
 const loader = new GLTFLoader();
 loader.load(
-    "./assets/forest_diorama/scene.gltf",
+    './assets/forest_diorama/scene.gltf',
     function (gltf) {
         console.log(gltf.scene.position);
         scene.add(gltf.scene);
-        console.log("added");
+        console.log('added');
     },
     undefined,
     function (error) {
@@ -68,7 +67,7 @@ loader.load(
 );
 
 window.addEventListener(
-    "resize",
+    'resize',
     () => {
         camera.aspect = window.innerWidth / window.innerHeight;
         camera.updateProjectionMatrix();
