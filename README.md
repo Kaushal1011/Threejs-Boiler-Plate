@@ -6,7 +6,7 @@ Boiler Plate for starting a Threejs project along tips and learnings that I have
 
 1. `npm i`
 2. `npm start` or `npm run dev` (requires you to have nodemon installed `npm install nodemon --save`)
-3. serves [index.html](./public/index.html) on __localhost:3000__.
+3. serves [index.html](./public/index.html) on __localhost:3000__ based on [kawaiscapes.js](./public/js/kawaiscapes.js).
 
 ## Extra Info
 
